@@ -35,7 +35,7 @@ export default function Register() {
             <Bus className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl font-black text-slate-900 tracking-tight">Get Started.</h1>
-          <p className="text-slate-800 font-medium mt-2">Create your BusGo account</p>
+          <p className="text-slate-800 font-medium mt-2">Create your Trivedi Travels account</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">

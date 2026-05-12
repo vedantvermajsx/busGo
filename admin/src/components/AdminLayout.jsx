@@ -64,7 +64,7 @@ export default function AdminLayout() {
             <Bus className="w-6 h-6 text-slate-950" />
           </div>
           <div>
-            <p className="font-black text-white text-lg leading-none tracking-tight">BusGo.</p>
+            <p className="font-black text-white text-lg leading-none tracking-tight">Trivedi Travels.</p>
             <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mt-1">Admin</p>
           </div>
         </div>

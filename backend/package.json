@@ -1,6 +1,7 @@
 {
-  "name": "bus-booking-backend",
-  "version": "2.0.0",
+  "name": "trivedi-travels-backend",
+  "version": "1.0.0",
+  "description": "Backend for Trivedi Travels",
   "type": "module",
   "scripts": {
     "dev": "nodemon src/server.js",

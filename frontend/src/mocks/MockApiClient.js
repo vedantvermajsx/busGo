@@ -16,7 +16,7 @@ import { handleBookings } from './handlers/bookingHandler.js';
 import { handleAdmin } from './handlers/adminHandler.js';
 
 const MOCK_DELAY_MS = 200;
-const STORAGE_KEY = 'busgo-auth';
+const STORAGE_KEY = 'trivedi-travels-auth';
 
 // Resolve dynamic date placeholders in trip startTimes
 function hydrateDates(data) {

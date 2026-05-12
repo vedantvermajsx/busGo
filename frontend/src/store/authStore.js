@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import authApi from '../services/AuthApi.js';
 
-const STORAGE_KEY = 'busgo-auth';
+const STORAGE_KEY = 'trivedi-travels-auth';
 
 export const useAuthStore = create((set, get) => ({
   user: null,

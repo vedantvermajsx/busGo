@@ -19,6 +19,6 @@ export const useAdminStore = create(
 
       logout: () => set({ user: null, token: null, isAuthenticated: false }),
     }),
-    { name: 'busgo-admin' }
+    { name: 'trivedi-travels-admin' }
   )
 );

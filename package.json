@@ -1,7 +1,7 @@
 {
-  "name": "bus-booking-monorepo",
+  "name": "trivedi-travels-monorepo",
   "version": "1.0.0",
-  "description": "Integrated Bus Booking System",
+  "description": "Integrated Trivedi Travels System",
   "private": true,
   "scripts": {
     "install:app": "npm install && cd backend && npm install && cd ../frontend && npm install",

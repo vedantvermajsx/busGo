@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
 
         <p className="text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed mb-12">
-          A minimalist bus booking experience. No fixed routes, no hidden fees.
+          A minimalist Trivedi Travels experience. No fixed routes, no hidden fees.
           Just road distance and fair pricing.
         </p>
 

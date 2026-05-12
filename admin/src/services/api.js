@@ -3,7 +3,7 @@
  */
 import axios from 'axios';
 
-const ADMIN_STORAGE_KEY = 'busgo-admin-auth';
+const ADMIN_STORAGE_KEY = 'trivedi-travels-admin-auth';
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || '/api',
@@ -12,7 +12,7 @@ const api = axios.create({
 
 api.interceptors.request.use((config) => {
   try {
-    const stored = localStorage.getItem('busgo-admin');
+    const stored = localStorage.getItem('trivedi-travels-admin');
     if (stored) {
       const { state } = JSON.parse(stored);
       if (state?.token) config.headers.Authorization = `Bearer ${state.token}`;
@@ -25,7 +25,7 @@ api.interceptors.response.use(
   (res) => res,
   (err) => {
     if (err.response?.status === 401) {
-      localStorage.removeItem('busgo-admin');
+      localStorage.removeItem('trivedi-travels-admin');
       window.location.href = '/admin/login';
     }
     return Promise.reject(err);

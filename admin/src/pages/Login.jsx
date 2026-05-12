@@ -34,7 +34,7 @@ export default function Login() {
             <Bus className="w-8 h-8 text-slate-950" />
           </div>
           <h1 className="text-3xl font-black text-white tracking-tight">Admin Portal.</h1>
-          <p className="text-slate-400 font-medium mt-2">Sign in to manage BusGo</p>
+          <p className="text-slate-400 font-medium mt-2">Sign in to manage Trivedi Travels</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">

@@ -18,7 +18,7 @@ class ApiClient {
     // Inject auth token from localStorage
     this.http.interceptors.request.use((config) => {
       try {
-        const stored = localStorage.getItem('busgo-auth');
+        const stored = localStorage.getItem('trivedi-travels-auth');
         if (stored) {
           const { token } = JSON.parse(stored);
           if (token) config.headers.Authorization = `Bearer ${token}`;
@@ -32,7 +32,7 @@ class ApiClient {
       (res) => res.data,
       (err) => {
         if (err.response?.status === 401) {
-          localStorage.removeItem('busgo-auth');
+          localStorage.removeItem('trivedi-travels-auth');
           window.location.href = '/login';
         }
         const message = err.response?.data?.message || err.message || 'Network error';
@@ -55,7 +55,7 @@ if (import.meta.env.VITE_USE_MOCK === 'true') {
   // Dynamic import keeps the mock bundle separate from production builds
   const { default: MockApiClient } = await import('../mocks/MockApiClient.js');
   client = MockApiClient;
-  console.info('[BusGo] 🧪 Mock API enabled — using in-memory db.json');
+  console.info('[Trivedi Travels] 🧪 Mock API enabled — using in-memory db.json');
 } else {
   client = new ApiClient();
 }

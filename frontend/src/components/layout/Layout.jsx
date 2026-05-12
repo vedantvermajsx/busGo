@@ -13,7 +13,7 @@ export default function Layout() {
             <div className="w-10 h-10 bg-slate-900 rounded-2xl flex items-center justify-center">
               <Bus className="w-6 h-6 text-white" />
             </div>
-            <span>BusGo.</span>
+            <span>Trivedi Travels.</span>
           </Link>
           <div className="flex items-center gap-8">
             {isAuthenticated ? (
@@ -54,7 +54,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <footer className="py-12 text-center">
-        <p className="text-[10px] font-black text-slate-300 uppercase tracking-[0.2em]">© 2024 BusGo — Journey with Purpose</p>
+        <p className="text-[10px] font-black text-slate-300 uppercase tracking-[0.2em]">© 2024 Trivedi Travels — Journey with Purpose</p>
       </footer>
     </div>
   );
