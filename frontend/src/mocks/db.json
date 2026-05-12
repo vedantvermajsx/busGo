@@ -1,0 +1,199 @@
+{
+  "users": [
+    {
+      "_id": "usr_admin_01",
+      "name": "Admin User",
+      "email": "admin@demo.com",
+      "password": "password123",
+      "phone": "+91 9000000001",
+      "role": "admin",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "_id": "usr_user_01",
+      "name": "Rahul Sharma",
+      "email": "user@demo.com",
+      "password": "password123",
+      "phone": "+91 9876543210",
+      "role": "user",
+      "createdAt": "2024-01-15T00:00:00.000Z"
+    },
+    {
+      "_id": "usr_user_02",
+      "name": "Priya Patel",
+      "email": "priya@demo.com",
+      "password": "password123",
+      "phone": "+91 9123456789",
+      "role": "user",
+      "createdAt": "2024-02-01T00:00:00.000Z"
+    }
+  ],
+  "buses": [
+    {
+      "_id": "bus_01",
+      "vehicleNumber": "MH-12-AB-1234",
+      "operatorName": "Shivneri Travels",
+      "type": "AC",
+      "capacity": 40,
+      "amenities": ["WiFi", "Charging Point", "Water Bottle"],
+      "isActive": true,
+      "status": "available"
+    },
+    {
+      "_id": "bus_02",
+      "vehicleNumber": "MH-14-CD-5678",
+      "operatorName": "VRL Travels",
+      "type": "Sleeper",
+      "capacity": 30,
+      "amenities": ["Charging Point", "Blanket"],
+      "isActive": true,
+      "status": "available"
+    },
+    {
+      "_id": "bus_03",
+      "vehicleNumber": "KA-01-EF-9012",
+      "operatorName": "SRS Travels",
+      "type": "Non-AC",
+      "capacity": 52,
+      "amenities": [],
+      "isActive": true,
+      "status": "available"
+    },
+    {
+      "_id": "bus_04",
+      "vehicleNumber": "GJ-05-GH-3456",
+      "operatorName": "Neeta Volvo",
+      "type": "Semi-Sleeper",
+      "capacity": 35,
+      "amenities": ["WiFi", "Charging Point"],
+      "isActive": true,
+      "status": "available"
+    },
+    {
+      "_id": "bus_05",
+      "vehicleNumber": "RJ-02-IJ-7890",
+      "operatorName": "Hans Travels",
+      "type": "Mini",
+      "capacity": 20,
+      "amenities": ["Charging Point"],
+      "isActive": true,
+      "status": "available"
+    }
+  ],
+  "trips": [
+    {
+      "_id": "trip_01",
+      "busId": "bus_01",
+      "startTime": "__TODAY_T06:00:00.000Z__",
+      "availableSeats": 28,
+      "basePricePerKm": 2.5,
+      "status": "scheduled",
+      "adminApproved": true,
+      "operatorConfirmed": true,
+      "notes": ""
+    },
+    {
+      "_id": "trip_02",
+      "busId": "bus_02",
+      "startTime": "__TODAY_T08:30:00.000Z__",
+      "availableSeats": 18,
+      "basePricePerKm": 3.0,
+      "status": "scheduled",
+      "adminApproved": true,
+      "operatorConfirmed": true,
+      "notes": ""
+    },
+    {
+      "_id": "trip_03",
+      "busId": "bus_03",
+      "startTime": "__TODAY_T11:00:00.000Z__",
+      "availableSeats": 45,
+      "basePricePerKm": 1.8,
+      "status": "scheduled",
+      "adminApproved": false,
+      "operatorConfirmed": true,
+      "notes": ""
+    },
+    {
+      "_id": "trip_04",
+      "busId": "bus_04",
+      "startTime": "__TOMORROW_T07:00:00.000Z__",
+      "availableSeats": 22,
+      "basePricePerKm": 2.8,
+      "status": "scheduled",
+      "adminApproved": true,
+      "operatorConfirmed": false,
+      "notes": ""
+    },
+    {
+      "_id": "trip_05",
+      "busId": "bus_05",
+      "startTime": "__TOMORROW_T09:30:00.000Z__",
+      "availableSeats": 0,
+      "basePricePerKm": 2.2,
+      "status": "scheduled",
+      "adminApproved": true,
+      "operatorConfirmed": true,
+      "notes": ""
+    }
+  ],
+  "bookings": [
+    {
+      "_id": "bkg_01",
+      "userId": "usr_user_01",
+      "tripId": "trip_01",
+      "bookingReference": "BG-001-2024",
+      "seatNumber": 5,
+      "passengerName": "Rahul Sharma",
+      "passengerPhone": "+91 9876543210",
+      "fromCoords": { "lat": 18.5204, "lng": 73.8567, "address": "Shivajinagar, Pune, Maharashtra" },
+      "toCoords": { "lat": 19.076, "lng": 72.8777, "address": "Dadar, Mumbai, Maharashtra" },
+      "distanceKm": 165,
+      "price": 412,
+      "fareBreakdown": { "distanceKm": 165, "pricePerKm": 2.5, "durationText": "3 hr 20 min" },
+      "status": "confirmed",
+      "verificationCode": "1234",
+      "isVerified": false,
+      "cancellationReason": null,
+      "createdAt": "2024-06-01T10:00:00.000Z"
+    },
+    {
+      "_id": "bkg_02",
+      "userId": "usr_user_01",
+      "tripId": "trip_02",
+      "bookingReference": "BG-002-2024",
+      "seatNumber": 12,
+      "passengerName": "Rahul Sharma",
+      "passengerPhone": "+91 9876543210",
+      "fromCoords": { "lat": 17.385, "lng": 78.4867, "address": "Secunderabad, Hyderabad, Telangana" },
+      "toCoords": { "lat": 13.0827, "lng": 80.2707, "address": "Chennai Central, Chennai, Tamil Nadu" },
+      "distanceKm": 700,
+      "price": 2100,
+      "fareBreakdown": { "distanceKm": 700, "pricePerKm": 3.0, "durationText": "11 hr 45 min" },
+      "status": "pending",
+      "verificationCode": "5678",
+      "isVerified": false,
+      "cancellationReason": null,
+      "createdAt": "2024-06-02T14:30:00.000Z"
+    },
+    {
+      "_id": "bkg_03",
+      "userId": "usr_user_02",
+      "tripId": "trip_01",
+      "bookingReference": "BG-003-2024",
+      "seatNumber": 8,
+      "passengerName": "Priya Patel",
+      "passengerPhone": "+91 9123456789",
+      "fromCoords": { "lat": 18.6298, "lng": 73.7997, "address": "Pimpri-Chinchwad, Pune, Maharashtra" },
+      "toCoords": { "lat": 19.2183, "lng": 72.978, "address": "Thane, Mumbai, Maharashtra" },
+      "distanceKm": 155,
+      "price": 387,
+      "fareBreakdown": { "distanceKm": 155, "pricePerKm": 2.5, "durationText": "3 hr 05 min" },
+      "status": "completed",
+      "verificationCode": "9012",
+      "isVerified": true,
+      "cancellationReason": null,
+      "createdAt": "2024-05-20T09:15:00.000Z"
+    }
+  ]
+}

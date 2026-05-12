@@ -1,0 +1,18 @@
+{
+  "name": "bus-booking-monorepo",
+  "version": "1.0.0",
+  "description": "Integrated Bus Booking System",
+  "private": true,
+  "scripts": {
+    "install:app": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build:app": "cd frontend && npm run build",
+    "setup:app": "npm run install:app && npm run build:app",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install && cd ../admin && npm install",
+    "build:frontend": "cd frontend && npm run build",
+    "build:admin": "cd admin && npm run build",
+    "build:all": "npm run build:frontend && npm run build:admin",
+    "start": "node backend/src/server.js",
+    "dev:backend": "nodemon backend/src/server.js",
+    "seed": "cd backend && npm run seed"
+  }
+}
